@@ -53,7 +53,12 @@ const SelectedMovieSection = () => {
               {formatTime(Number(Featured.Duration) || 0)}
             </p>
             <p className='text-white'>{Featured.Description}</p>
-            <img src={titleImagePath} alt={Featured.Title} className='w-96' />
+            <img
+              src={titleImagePath}
+              alt={Featured.Title}
+              className='w-96'
+              draggable={false}
+            />
           </div>
         )}
         {!isVideo && (
