@@ -24,7 +24,8 @@ const SliderSection = ({ items }: { items: any[] | null }) => {
           return (
             <img
               src={setUrlImage(item.CoverImage)}
-              className='min-w-36 object-cover w-full'
+              className='min-w-36 object-cover w-full select-none'
+              draggable={false}
               onClick={() => {
                 storeSelectedMovies(item.Id);
                 dispatch({ type: Featured.SELECT, payload: item });

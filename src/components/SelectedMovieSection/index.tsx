@@ -56,7 +56,7 @@ const SelectedMovieSection = () => {
             <img
               src={titleImagePath}
               alt={Featured.Title}
-              className='w-96'
+              className='w-96 select-none'
               draggable={false}
             />
           </div>
